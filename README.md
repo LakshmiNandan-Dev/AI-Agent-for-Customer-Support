@@ -16,11 +16,13 @@ Rate Limit Handling: Built-in retry logic and graceful degradation**
 
 <img width="343" height="601" alt="image" src="https://github.com/user-attachments/assets/bf30f282-28bf-4f0c-b1f3-42ff81aa96d3" />
 
-Quick Start
+## Quick Start
 Prerequisites
 
 Python 3.11+
+
 Docker & Docker Compose (optional)
+
 Google Gemini API Key 
 
 
