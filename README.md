@@ -2,7 +2,7 @@
 An intelligent customer support agent built with LangChain, Google Gemini AI, and RAG (Retrieval-Augmented Generation). 
 This system automatically routes customer queries, provides context-aware responses, and escalates to human agents when needed.
 
-Features
+## Features
 
 Intelligent Query Routing: Automatically classifies queries into FAQ, Technical, Billing, or Unknown categories
 RAG-Powered Responses: Uses document retrieval with FAISS vector store for context-aware answers
@@ -12,7 +12,7 @@ Production Ready: Dockerized setup with FastAPI backend and Streamlit frontend
 Vector Search: FAISS-based semantic search for accurate document retrieval
 Rate Limit Handling: Built-in retry logic and graceful degradation**
 
-Architecture
+## Architecture
 
 <img width="343" height="601" alt="image" src="https://github.com/user-attachments/assets/bf30f282-28bf-4f0c-b1f3-42ff81aa96d3" />
 
@@ -25,7 +25,7 @@ Google Gemini API Key
 
 
 
-Local Setup
+## Local Setup
 
 Clone the repository
 
