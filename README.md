@@ -41,29 +41,29 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 
 Install dependencies
 
-bashpip install -r requirements.txt
+pip install -r requirements.txt
 
 Configure environment variables
 
-bash# Create .env file
+### Create .env file
 cp .env.example .env
 
-# Edit .env and add your API key
+### Edit .env and add your API key
 GOOGLE_API_KEY=your_gemini_api_key_here
 
 Add your knowledge base documents
 
-bash# Place your documents in the data/ directory
+### Place your documents in the data/ directory
 mkdir -p data
-# Add .txt or .pdf files with your FAQs, technical docs, etc.
+### Add .txt or .pdf files with your FAQs, technical docs, etc.
 
 Build the FAISS index
 
-bashpython build_index.py
+python build_index.py
 
 Run the application
 
-bash# Start FastAPI backend
+Start FastAPI backend
 uvicorn app.main:app --host 0.0.0.0 --port 8000
 
 # In another terminal, start Streamlit frontend
