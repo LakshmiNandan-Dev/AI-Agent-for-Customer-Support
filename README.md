@@ -87,38 +87,7 @@ Access the application
 Frontend: http://localhost:8080
 Backend API: http://localhost:8000
 
-📁 Project Structure
-customer-support-agent/
-│
-├── app/
-│   ├── __init__.py
-│   ├── main.py              # FastAPI application
-│   ├── agent.py             # Main agent logic
-│   ├── router.py            # Query routing with AI
-│   ├── rag.py               # RAG implementation
-│   ├── handoff.py           # Human handoff logic
-│   ├── utils.py             # Utility functions
-│   └── config.py            # Configuration
-│
-├── frontend/
-│   └── streamlit_app.py     # Streamlit UI
-│
-├── data/                    # Knowledge base documents
-│   ├── faqs.txt
-│   ├── technical_docs.pdf
-│   └── ...
-│
-├── faiss_index/             # Vector store (generated)
-│   ├── index.faiss
-│   └── index.pkl
-│
-├── Dockerfile               # Docker configuration
-├── docker-compose.yml       # Docker Compose setup
-├── requirements.txt         # Python dependencies
-├── build_index.py          # Script to build FAISS index
-├── .env.example            # Environment variables template
-└── README.md               # This file
-🔧 Configuration
+
 Environment Variables
 Create a .env file with the following:
 env# Required
