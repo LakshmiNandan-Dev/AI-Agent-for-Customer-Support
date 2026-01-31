@@ -95,16 +95,21 @@ GOOGLE_API_KEY=your_gemini_api_key_here
 
 # Optional
 MODEL_NAME=gemini-2.5-flash
+
 HF_HOME=/app/.cache/huggingface
+
 Customizing the Router
+
 Edit app/router.py to add custom keywords for your domain:
 python# Add your custom keywords
 if any(word in query_lower for word in ['your', 'custom', 'keywords']):
     return 'YourCategory', 0.85
 Adjusting Confidence Threshold
 In app/agent.py, modify the confidence threshold:
-pythonif confidence < 0.8:  # Adjust this value
+if confidence < 0.8:  # Adjust this value
     return handoff_to_human(query)
+
+    
 📊 API Endpoints
 POST /query
 Process a customer query
