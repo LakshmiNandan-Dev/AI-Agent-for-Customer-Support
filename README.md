@@ -14,33 +14,7 @@ Rate Limit Handling: Built-in retry logic and graceful degradation**
 
 Architecture
 
-┌─────────────┐
-│   User      │
-│   Query     │
-└──────┬──────┘
-       │
-       ▼
-┌─────────────────┐
-│  Query Router   │ ◄─── Gemini 2.5 Flash
-│  (Classifier)   │
-└────────┬────────┘
-         │
-    ┌────┴────┐
-    │         │
-    ▼         ▼
-┌────────┐ ┌──────────────┐
-│ Direct │ │ RAG Pipeline │
-│ Reply  │ │              │
-└────────┘ └──────┬───────┘
-              │
-         ┌────┴─────┐
-         │          │
-         ▼          ▼
-    ┌────────┐ ┌─────────┐
-    │ FAISS  │ │ Gemini  │
-    │Vector  │ │Response │
-    │Store   │ │Generator│
-    └────────┘ └─────────┘
+<img width="343" height="601" alt="image" src="https://github.com/user-attachments/assets/bf30f282-28bf-4f0c-b1f3-42ff81aa96d3" />
 
 Quick Start
 Prerequisites
