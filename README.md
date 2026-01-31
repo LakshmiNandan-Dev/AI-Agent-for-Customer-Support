@@ -31,7 +31,7 @@ Google Gemini API Key
 
 Clone the repository
 
-bashgit clone https://github.com/yourusername/customer-support-agent.git
+git clone https://github.com/yourusername/customer-support-agent.git
 cd customer-support-agent
 
 Create virtual environment
